@@ -1,0 +1,92 @@
+.Header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 2fr 3fr;
+    background-color: #483D8B;
+    color: white;
+}
+
+div{
+    height: inherit;
+}
+
+.Logo {
+    position: relative;
+    display: flex;
+    top: 10px;
+    justify-content: start;
+    align-items: center;
+    background-color: #F7F7F7;
+    border: 5px solid #483D8B;
+}
+
+img {
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+.Logo > div {
+    position: relative;
+    left: 5px;
+    bottom: 12px;
+    display: flex;
+    color: #483D8B;
+}
+
+.LogoTexto p:nth-child(1) {
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.LogoTexto p:nth-child(2) {
+    position: relative;
+    font-size: 36px;
+    top: 20px;
+    right: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+}
+
+.Buttons {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 5px; 
+}
+
+Button {
+    margin: 5px;
+    transition: 0.25s;
+    transform: pulse;
+}
+
+Button:hover, Button:focus {
+    color: #fff;
+    border-color: #836FFF;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    animation: pulsar 1s;
+}
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 5px #836FFF;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Logo p:nth-child(1), .Logo p:nth-child(2){
+      display: none;
+    }
+    .Logo {
+        width: min-content;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .Logo {
+        display: none;
+    }
+}
