@@ -1,0 +1,7 @@
+.Content {
+    margin: 15px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}

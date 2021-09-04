@@ -1,16 +1,10 @@
 import React from 'react';
-import { Image, Layout } from 'antd';
+import { Header } from 'antd/lib/layout/layout';
 import './Header.css'
 // import ButtonGroup from 'antd/lib/button/button-group';
 import { Button } from 'antd';
 // import { Layout } from 'antd';
 
-const { Header} = Layout
-const botoes = {
-    home: "Home",
-    contato: "Contato",
-    site: "Site"
-}
 const HeaderLayout = () => {
     return (
         <Header className="Header">
@@ -28,10 +22,8 @@ const HeaderLayout = () => {
             <div>
             </div>
             <div className="Buttons" >
-                
                 <Button shape="round" >Home</Button>
                 <Button shape="round" >Contato</Button>
-                <Button shape="round" >Home</Button>
             </div>
         </Header>
     )

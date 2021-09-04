@@ -4,15 +4,15 @@ import { Layout } from 'antd';
 import './App.css'
 import HeaderLayout from './layout/Header/Header';
 import FooterLayout from './layout/Footer/Footer';
+import ContentLayout from './layout/Content/Content';
 
-const {  Footer, Content } = Layout;
 
 const App = () => {
     return (
         <>
             <Layout>
                 <HeaderLayout />
-                <Content className="Content" />
+                <ContentLayout className="Content" />
                 <FooterLayout />
             </Layout>
         </>
